@@ -1,16 +1,11 @@
 package com.example;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
 /**
  * Student POJO class for Spring Dependency Injection demonstration
  * Supports both Constructor Injection and Setter Injection
  */
-@Entity
 public class Student {
 
-    @Id
     private int studentId;
     private String name;
     private String course;
