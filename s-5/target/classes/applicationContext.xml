@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 
+        Component Scanning Configuration:
+        This <context:component-scan> element tells Spring to automatically detect
+        and register beans marked with @Component, @Service, @Repository, @Controller, etc.
+        in the specified package and its sub-packages.
+        
+        The @Autowired annotation will work with this configuration to inject dependencies
+        automatically when Spring creates bean instances.
+    -->
+    <context:component-scan base-package="com.example.model"/>
+
+    <!-- 
+        Additional Spring beans can be defined here if needed.
+        Since we're using @Component annotations, explicit bean definitions are not required.
+    -->
+
+</beans>

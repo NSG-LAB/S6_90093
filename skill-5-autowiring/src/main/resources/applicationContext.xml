@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Enable component scanning to auto-detect @Component annotations -->
+    <context:component-scan base-package="com.example.model"/>
+
+    <!-- 
+        With component scanning enabled, Spring will:
+        1. Automatically detect all classes marked with @Component
+        2. Create bean instances for Certification and Student
+        3. Resolve @Autowired dependencies
+        
+        No explicit bean definitions are needed because:
+        - Certification is marked with @Component
+        - Student is marked with @Component and has @Autowired annotation
+    -->
+
+</beans>

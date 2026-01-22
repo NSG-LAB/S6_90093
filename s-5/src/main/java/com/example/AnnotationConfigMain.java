@@ -1,9 +1,10 @@
 package com.example;
 
-import com.example.config.AppConfig;
-import com.example.model.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.config.AppConfig;
+import com.example.model.Student;
 
 /**
  * Main class demonstrating Spring @Autowired annotation using Java annotation-based configuration.
