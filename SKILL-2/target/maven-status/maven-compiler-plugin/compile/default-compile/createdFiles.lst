@@ -1,0 +1,4 @@
+com\example\util\HibernateUtil.class
+com\example\Main.class
+com\example\dao\ProductDao.class
+com\example\entity\Product.class
