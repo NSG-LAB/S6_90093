@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Maven Verify",
+			"type": "shell",
+			"command": "mvn",
+			"args": [
+				"-f",
+				"pom.xml",
+				"verify"
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
